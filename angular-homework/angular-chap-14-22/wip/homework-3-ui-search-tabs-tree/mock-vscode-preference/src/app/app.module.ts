@@ -17,6 +17,7 @@ import { FlatTreeComponent } from './settings/flat-tree/flat-tree.component';
 import { UserComponent } from './settings/user/user.component';
 import { WorkspaceComponent } from './settings/workspace/workspace.component';
 import { TabsComponent } from './settings/tabs/tabs.component';
+import { ConfigKeyComponent } from './settings/tabs/config-key/config-key.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TabsComponent } from './settings/tabs/tabs.component';
     FlatTreeComponent,
     UserComponent,
     WorkspaceComponent,
-    TabsComponent
+    TabsComponent,
+    ConfigKeyComponent
   ],
   imports: [
     BrowserModule,
