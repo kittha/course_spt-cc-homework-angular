@@ -1,1 +1,52 @@
-<p>config-key works!</p>
+<div class="container">
+    <div class="h5">
+        Commonly Used<br/>
+    </div>
+
+    <div class="pt-4">
+        Files: <b>Auto Save</b><br/>
+        controls auto save of dirty editors. Read more about autosave here.<br/>
+        <mat-form-field appearance="fill">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+              <mat-option value="off">off</mat-option>
+              <mat-option value="afterDelay">afterDelay</mat-option>
+              <mat-option value="onFocusChange">onFocusChange</mat-option>
+              <mat-option value="onWindowChange">onWindowChange</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    
+    <div class="pt-4">
+        Editor: <b>Font Size</b><br/>
+        Controls the font size in pixels.<br/>
+        <input type="text" placeholder="14"><br/>
+    </div>
+    
+    <div class="pt-4">
+        Editor: <b>Font Family</b><br/>
+        Controls the font family.<br/>
+        <input type="text" placeholder="'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"><br/>
+    </div>
+    
+    <div class="pt-4">
+        Editor: <b>Tab Size</b><br/>
+        The number of spaces a tab is equal to. This setting is overridden based on the file contents when Editor: Detect Indentation is on.<br/>
+        <input type="text" placeholder="4"><br/>
+    </div>
+    
+    <div class="pt-4">
+        Editor: <b>Render Whitespace</b><br/>
+        Controls how the editor should render whitespace characters.<br/>
+        <mat-form-field appearance="fill">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+              <mat-option value="none">none</mat-option>
+              <mat-option value="boundary">boundary</mat-option>
+              <mat-option value="selection">selection</mat-option>
+              <mat-option value="trailing">trailing</mat-option>
+              <mat-option value="all">all</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+</div>

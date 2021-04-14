@@ -10,6 +10,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree'; 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 import { SettingsComponent } from './settings/settings.component';
 import { SearchSettingsComponent } from './settings/search-settings/search-settings.component';
@@ -40,6 +42,8 @@ import { ConfigKeyComponent } from './settings/tabs/config-key/config-key.compon
     MatTreeModule,
     MatIconModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
