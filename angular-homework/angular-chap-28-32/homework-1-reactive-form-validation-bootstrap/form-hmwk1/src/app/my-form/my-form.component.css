@@ -1,0 +1,53 @@
+/* ********** css of v1 (start) ***********/
+/* * {
+    outline-style: dotted;
+} */
+
+/* .badge {
+    color: red;
+}
+
+.bg-white {
+    background-color: white;
+    height: 90vh;
+} */
+
+/* change tag input display from box to line. */
+/* input,
+select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input:focus,
+select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+} */
+
+/* .vertical-center {
+    min-height: 100%; 
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+  } */
+/* ********** css of v1 (end) ***********/
+
+
+/* ********** css of v2 (start) ***********/
+/* .error {
+    font-size: 10px;
+    color: red;
+  } */
+
+/* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+/* ********** css of v2 (end) ***********/

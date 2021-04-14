@@ -1,0 +1,24 @@
+<h2> ******************** CTF Example Component Ready ******************** </h2>
+<h3>This is example. Feel free to skip.</h3>
+<div>
+    <h2 class='header'>{{ title }}</h2>
+    <h3>{{ description }}</h3>
+    <div>
+        Set Title: <input [(ngModel)]="title" />
+        Set Description: <input [(ngModel)]="description" /> <br/>
+    </div>
+</div>
+
+<div>
+    <h2>{{ count }}</h2>
+    <button (click)="countNumber()">Count</button>
+</div>
+
+<ul>
+    <li *ngFor="let item of items">
+      <span *ngIf="item !== 5">{{ item }}</span>
+      <b *ngIf="item === 5">{{ item }}</b>
+    </li>
+</ul>
+
+<hr>

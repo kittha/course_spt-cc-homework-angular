@@ -1,0 +1,8 @@
+.topbanner {
+    display: inline-block;
+    background: seagreen;
+    margin-top: 2vh;
+    padding: 6vh 25vh 6vh 25vh;
+    margin-left: 27vw;
+    text-align: center;
+}

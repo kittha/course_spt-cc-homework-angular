@@ -1,0 +1,29 @@
+<h2>My Tasks today</h2>
+<ul>
+    <li *ngFor="let task of tasksObjArr; let i=index" (click)="selectTask(i)">
+        <span>Task: {{ task.taskname }}</span>
+        <span (click)="deleteTask(i)" class='delete-button'> [x]</span><br/>
+        <span>Desc: {{ task.description }}</span><br/>
+    </li>
+</ul>
+
+<div *ngIf="displayState">
+    Task: {{ selectedObj.taskname }}<br/> 
+    Desc: {{ selectedObj.description }}
+</div>
+
+<div [hidden]="newTask">
+    Type in a new task...
+</div>
+
+<div [hidden]="!newTask">
+    Typing: {{ newTask }} {{ newDescription }}
+</div>
+
+<form (submit)="addTask($event)">
+    <label for="input-box">Task: </label>
+    <input [(ngModel)]="newTask" type="text" id='input-box' name="newTask"/>
+    <label for="input-box">Description: </label>
+    <input [(ngModel)]="newDescription" type="text" id='input-box' name="newDescription"/>
+    <button type="submit" [disabled]="newTask===''" [disabled]="newDescription===''">Add</button>
+</form>

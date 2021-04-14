@@ -1,0 +1,10 @@
+.searchbar {
+    /* color: black; */
+    z-index: 1;
+    /* position:relative; */
+    position: fixed;
+    top: 50%;
+    left: 27.5%;
+    
+}
+

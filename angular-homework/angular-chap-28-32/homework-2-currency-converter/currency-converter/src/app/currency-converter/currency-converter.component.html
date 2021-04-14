@@ -1,0 +1,82 @@
+<div class="container pt-5 center">
+  <mat-card>
+    <div>
+      <h2>
+        {{ title | uppercase }}
+      </h2>
+    </div>
+  </mat-card>
+</div>
+
+<!-- <div class="container pt-5">
+  <mat-card>
+    <div>
+      <h2>I'm app-currency-converter</h2>
+      <h3>I fetch data via exchangeRatesService</h3>
+      <p>Refresh app to get the lastest spot.</p>
+    </div>
+    
+    
+    <div style="border:1px solid grey; margin:4px; padding:4px">
+        <span>{{ posts | json }}</span>
+        <p>{{ posts.success }}</p>
+    </div>
+  </mat-card>
+</div> -->
+
+
+<div class="container pt-5">
+  <mat-card>
+    <form [formGroup]="form" (submit)="convert()">
+      <div class="center">
+        <!-- BASE AMOUNT & BASE CURRENCY BOX -->
+        <mat-form-field appearance="standard">
+            <mat-label>Base Amount</mat-label>
+            <input matInput formControlName="baseAmount" required>
+        </mat-form-field>
+    
+        <mat-form-field appearance="standard">
+          <mat-label>Base Currency</mat-label>
+          <mat-select formControlName="baseCurrency" required>
+            <mat-option *ngFor="let baseCurrency of baseCurrencyList" [value]="baseCurrency">
+              {{baseCurrency}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <br/>
+
+        <!-- TARGET AMOUNT & TARGET CURRENCY BOX -->
+        <mat-form-field appearance="standard">
+          <mat-label>Target Amount</mat-label>
+          <!-- <input matInput> {{ this.form.value.targetAmount }} -->
+          <input matInput [value]="this.form.value.targetAmount">
+        </mat-form-field>
+        
+        <mat-form-field appearance="standard">
+          <mat-label>Target Currency</mat-label>
+          <mat-select formControlName="targetCurrency" required>
+            <mat-option *ngFor="let targetCurrency of targetCurrencyList" [value]="targetCurrency">
+              {{targetCurrency}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <br/>
+
+        <div>
+          <button [disabled]="form.invalid" mat-raised-button color="primary" type="submit">Convert</button>
+        </div>
+      </div>
+  
+
+    </form>
+  </mat-card>
+</div>
+
+
+<div style="text-align: center;">
+  <code>
+      {{form.value | json}}
+  </code>
+</div>

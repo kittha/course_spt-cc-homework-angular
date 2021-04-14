@@ -1,0 +1,13 @@
+.searchbar {
+    /* color: black; */
+    /* z-index: 1; */
+    /* position:relative; */
+    position: fixed;
+    top: 5%;
+    left: 40%;
+    
+}
+
+.searchbar input {
+    size: "50";
+}

@@ -1,0 +1,8 @@
+.top-right-menu {
+    background: rgb(255, 255, 255);
+    color: red;
+    margin-top: 2vh;
+    padding: 0.25vh 3vh 0.25vh 3vh;
+    text-align: center;
+    float: right;
+}

@@ -1,0 +1,21 @@
+.subcategory {
+    display: block;
+    position: fixed;
+    background: rgb(220, 229, 238);
+    padding: 20px;
+    left: 20vw;
+    margin-top: 1vh;
+}
+
+.subcategory a {
+    padding: 23px;
+    text-decoration: none;
+}
+
+.subcategory a:hover {
+    background: rgb(146, 241, 213);
+}
+
+.subcategory nav a:link, .subcategory nav a:visited {
+    color: rgb(37, 36, 36);
+}

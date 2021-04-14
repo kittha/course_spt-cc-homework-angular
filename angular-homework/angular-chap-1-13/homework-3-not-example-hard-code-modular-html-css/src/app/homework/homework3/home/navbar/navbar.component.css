@@ -1,0 +1,15 @@
+.navbar {
+    background: rgb(221, 71, 52);
+    color: white;
+    padding: 15vh 20vh 11vh 20vh;
+    margin: -1%;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+p+button {
+    margin-left: 20%;
+}

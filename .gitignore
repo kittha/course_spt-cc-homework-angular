@@ -1,0 +1,4 @@
+node_modules/
+environment.ts
+environment.prod.ts
+environment_example.ts

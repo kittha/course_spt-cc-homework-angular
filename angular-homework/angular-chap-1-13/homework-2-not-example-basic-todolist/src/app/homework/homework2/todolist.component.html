@@ -1,0 +1,19 @@
+  <!-- 
+    13.2 อัพโหลดโค๊ดขึ้น github ของตนเอง จากนั้นนำลิงก์งานที่อัพขึ้นgithubของตนเองมาใส่ในช่องใส่คำตอบ (กลับไปดูคลิปบทที่ 13 เพื่อฟังโจทย์อีกครั้ง) 
+    สร้าง component ชื่อ ToDoListComponent
+    Component มีฟีเจอร์การเพิ่ม task และแสดงจํานวน task ที่ได้เพิ่ม (ซึ่งมีมากกว่า 1 task) ตามตัวอย่าง User Interface ในรูป
+  -->
+
+<h2>My Tasks today</h2>
+<ul>
+    <li *ngFor="let task of tasksObjArr; let i=index">
+        <span>{{ task.taskname }}</span>
+        <span (click)="deleteTask(i)" class='delete-button'> [x]</span>
+    </li>
+</ul>
+
+<form (submit)="addTask($event)">
+    <label for="input-box">Task: </label>
+    <input [(ngModel)]="newTask" type="text" id='input-box' name="newTask"/>
+    <button type="submit" [disabled]="newTask===''">Add</button>
+</form>

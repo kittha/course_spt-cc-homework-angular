@@ -1,0 +1,20 @@
+/* * {
+    outline-style: dotted;
+} */
+
+.bg-top {
+    background-color: #8BC34A;
+    height: 15vh;
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+}
+
+.bg-main {
+    background-color: #8bc34a57;
+    height: 85vh;
+    margin-top: 15vh;
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+}

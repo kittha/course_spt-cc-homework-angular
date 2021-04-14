@@ -1,0 +1,82 @@
+<!-- v2 -->
+<div class="container pt-5">
+    <mat-card>
+        <form [formGroup]="form" (submit)="submitForm()">
+            <mat-form-field class="w-50" appearance="standard">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" required>
+                <mat-error *ngIf="form.get('name').errors?.required">Name is required.</mat-error>
+            </mat-form-field><br/>
+
+            <mat-form-field class="w-50" appearance="standard">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" required>
+                <mat-error *ngIf="form.get('email').errors?.required">Email is required.</mat-error>
+                <mat-error *ngIf="form.get('email').errors?.email">Email is invalid.</mat-error>
+                <mat-error *ngIf="form.get('email').errors?.pattern">Email pattern is invalid.</mat-error>
+            </mat-form-field><br/>
+            
+            <mat-form-field class="w-50" appearance="standard">
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="address" required>
+                <mat-error *ngIf="form.get('address').errors?.required">Postal Address is required.</mat-error>
+            </mat-form-field><br/>
+            
+            <mat-form-field class="w-50" appearance="standard">
+                <mat-label>Comments</mat-label>
+                <input matInput formControlName="comments">
+            </mat-form-field><br/>
+            
+            <div>
+                <button [disabled]="form.invalid" mat-raised-button color="primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </mat-card>
+</div>
+
+<div style="text-align: center;">
+    <code>
+        {{form.value | json}}
+    </code>
+</div>
+
+
+
+
+<!-- v1 -->
+<!-- <div class="vertical-center">
+    <div class="container bg-white">
+        <form [formGroup]="form" class="p-5">
+            <div>
+                Name<span class="badge">*</span><br/>
+                <input class="w-50" formControlName="name" required placeholder="Your Answer">
+                <span style="color: red;" *ngIf="form.get('name').errors?.required">Name is required.</span>
+            </div>
+            <div>
+                Email<span class="badge">*</span><br/>
+                <input class="w-50" formControlName="email" required placeholder="Your Answer">
+                <span style="color: red;" *ngIf="form.get('email').errors?.required">Email is required.</span>
+                <span style="color: red;" *ngIf="form.get('email').errors?.email"> Email is invalid.</span>
+                <span style="color: red;" *ngIf="form.get('email').errors?.pattern"> Email pattern is invalid.</span>
+            </div>
+            <div>
+                Postal Address<span class="badge">*</span><br/>
+                <input class="w-50" formControlName="address" required placeholder="Your Answer">
+                <span style="color: red;" *ngIf="form.get('address').errors?.required">Postal Address is required.</span>
+            </div>
+            <div>
+                Comments<br/>
+                <input class="w-50" formControlName="comments" placeholder="Your Answer">
+            </div><br/>
+            <div>
+                <button mat-raised-button color="primary" [disabled]="form.invalid" (click)="submitForm()">Submit</button>
+            </div>
+        </form>  
+    </div> 
+</div>
+
+<div style="text-align: center;">
+    <code>
+        {{form.value | json}}
+    </code>
+</div> -->

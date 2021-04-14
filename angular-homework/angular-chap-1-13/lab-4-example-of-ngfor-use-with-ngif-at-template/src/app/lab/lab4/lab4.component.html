@@ -1,0 +1,21 @@
+<!-- <h2>Lab4 component ready!</h2> -->
+<h2>Lab 4: ทดสอบ Directives</h2>
+<ol>
+    <li>สร้าง component ชื่อ Lab4Component (lab4.component.ts)</li>
+    <li>สร้าง template, css และเชื่อมโยงเข้าด้วยกัน</li>
+    <li>สร้างตัวแปร array เก็บ 1-10</li>
+    <li>หน้า template ให้ใช้ ngFor เพื่อดึง item จาก array มาลูปแสดงผ่าน &lt;p&gt; tag</li>
+    <li>หาก item เป็นเลขคู่ ( mod ด้วย 2 เท่ากับ 0) → ใช้ item % 2 === 0 ให้ใช้ css class ชื่อ number-even ซึ่งแสดงตัวหนังสือ (color) สีเขียว</li>
+    <li>หาก item เป็นเลขคี่ ( mod ด้วย 2 ไม่เท่ากับ 0) → ใช้ item % 2 !== 0 ให้ใช้ css class ชื่อ number-odd ซึ่งแสดงตัวหนังสือ (color) สีแดง</li>
+</ol>
+
+<h3>Result of Lab 4</h3>
+
+<ul>
+    <li *ngFor="let num of numArr">
+        <p class='number-even' *ngIf="num % 2 === 0">{{ num }}</p>
+        <p class='number-odd' *ngIf="num % 2 !== 0">{{ num }}</p>
+    </li>
+</ul>
+
+<hr>
