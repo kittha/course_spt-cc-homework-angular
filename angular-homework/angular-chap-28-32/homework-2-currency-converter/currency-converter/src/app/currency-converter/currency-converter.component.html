@@ -33,6 +33,8 @@
         <mat-form-field appearance="standard">
             <mat-label>Base Amount</mat-label>
             <input matInput formControlName="baseAmount" required>
+            <mat-error *ngIf="form.get('baseAmount').errors?.required">Base Amount is required.</mat-error>
+            <mat-error *ngIf="form.get('baseAmount').errors?.pattern">Input number only.</mat-error>
         </mat-form-field>
     
         <mat-form-field appearance="standard">
@@ -42,6 +44,7 @@
               {{baseCurrency}}
             </mat-option>
           </mat-select>
+          <mat-error *ngIf="form.get('baseCurrency').errors?.required">Base Currency is required.</mat-error>
         </mat-form-field>
   
         <br/>
@@ -60,6 +63,7 @@
               {{targetCurrency}}
             </mat-option>
           </mat-select>
+          <mat-error *ngIf="form.get('targetCurrency').errors?.required">Target Currency is required.</mat-error>
         </mat-form-field>
   
         <br/>

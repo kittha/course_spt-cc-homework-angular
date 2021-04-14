@@ -31,7 +31,7 @@ export class CurrencyConverterComponent implements OnInit {
   
   ngOnInit(): void {
     this.form = this.fb.group({
-      baseAmount: [null, Validators.required],
+      baseAmount: [null, [Validators.required, Validators.pattern(/[+-]?([0-9]*[.])?[0-9]+/)] ],
       baseCurrency: [null],
       targetCurrency: [null],
       targetAmount: [null],
