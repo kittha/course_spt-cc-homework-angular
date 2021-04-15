@@ -1,0 +1,35 @@
+<div>
+    <mat-toolbar color="primary">
+
+        <mat-toolbar-row>
+            <button mat-icon-button class="example-icon" aria-label="icon-button with menu icon">
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+            <span class="example-spacer"></span>
+            <a mat-list-item class="p-3 profile" [routerLink]="'/Admin'"> John Smith </a>
+            <a mat-list-item class="p-3 logout" [routerLink]="'/Admin'"> Logout </a>
+        </mat-toolbar-row>
+        
+    </mat-toolbar>
+</div>
+
+
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="'/Admin'"> Dashboard </a>
+            <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <div style="height: 95vh;">
+            <router-outlet></router-outlet>
+        </div>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+  

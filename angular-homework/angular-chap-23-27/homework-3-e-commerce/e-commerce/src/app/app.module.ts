@@ -11,17 +11,16 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatCardModule} from '@angular/material/card';  
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatButtonModule } from '@angular/material/button'; 
+import { MatListModule } from '@angular/material/list';
 
 
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
+import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    SidebarMenuComponent,
     DashboardComponent
   ],
   imports: [
@@ -35,6 +34,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

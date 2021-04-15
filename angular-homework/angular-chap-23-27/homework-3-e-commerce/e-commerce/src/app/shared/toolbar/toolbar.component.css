@@ -1,0 +1,37 @@
+/* TOOLBAR */
+/* TOOLBAR : set user button, logout button to the right of the screen. */
+.example-spacer {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+/* TOOLBAR : set user button, logout button color to grey */
+mat-toolbar-row > a.profile {
+    /* color: grey; */
+    color: white;
+}
+
+mat-toolbar-row > a.logout {
+    /* color: lightgray; */
+    color: white;
+}
+
+/* toggle sidenav */
+/* .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+  
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+} */
+  
