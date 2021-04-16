@@ -18,7 +18,7 @@ const TREE_DATA: MenuNode[] = [
     url: '404',
     children: [
       {name: 'Products',
-      url: '404',},
+      url: 'products',},
       {name: 'Categories',
       url: '404',},
       {name: 'Manufacturers',

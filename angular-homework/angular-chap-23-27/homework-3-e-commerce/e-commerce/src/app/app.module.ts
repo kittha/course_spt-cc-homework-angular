@@ -17,13 +17,15 @@ import { MatListModule } from '@angular/material/list';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     DashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
