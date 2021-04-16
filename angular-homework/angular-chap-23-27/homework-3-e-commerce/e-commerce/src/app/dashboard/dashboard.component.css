@@ -1,0 +1,36 @@
+.news-card {
+    padding: 0px;
+}
+
+.news-header {
+    background-color: rgb(191, 222, 241);
+}
+
+.news-title-text {
+    padding: 10px;
+    color: rgb(45, 164, 238);
+}
+
+.news-content-text {
+    padding: 10px;
+}
+
+.stats-orders {
+    background-color: rgb(38, 174, 192);
+    color: white;
+}
+
+.stats-pending-return {
+    background-color: rgb(243, 212, 39);
+    color: white;
+}
+
+.stats-registered-customers {
+    background-color: rgba(45, 167, 45, 0.884);
+    color: white;
+}
+
+.stats-low-stock-products {
+    background-color: rgba(230, 48, 48, 0.863);
+    color: white;
+}
