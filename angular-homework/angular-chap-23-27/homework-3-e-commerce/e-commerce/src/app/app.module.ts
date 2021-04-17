@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -48,6 +49,8 @@ import { PopularSearchKeywordsComponent } from './dashboard/popular-search-keywo
     MatButtonModule,
     MatListModule,
     MatTableModule,
+    MatPaginatorModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface OrderTotalsElement {
+export interface OrderTotals {
   orderstatus: string;
   today: number;
   thisweek: number;
@@ -9,7 +9,7 @@ export interface OrderTotalsElement {
   alltime: number;
 }
 
-const ELEMENT_DATA: OrderTotalsElement[] = [
+const ORDER_DATA: OrderTotals[] = [
   {orderstatus: 'Pending', today: 0, thisweek: 0, thismonth: 0, thisyear: 0, alltime: 2468.80},
   {orderstatus: 'Processing', today: 0, thisweek: 0, thismonth: 0, thisyear: 0, alltime: 1957},
   {orderstatus: 'Complete', today: 0, thisweek: 0, thismonth: 0, thisyear: 0, alltime: 43.50},
@@ -23,7 +23,7 @@ const ELEMENT_DATA: OrderTotalsElement[] = [
 })
 export class OrderTotalsComponent implements OnInit {
   displayedColumns: string[] = ['orderstatus', 'today', 'thisweek', 'thismonth', 'thisyear', 'alltime'];
-  dataSource = ELEMENT_DATA;
+  dataSource = ORDER_DATA;
 
   constructor() { }
 
