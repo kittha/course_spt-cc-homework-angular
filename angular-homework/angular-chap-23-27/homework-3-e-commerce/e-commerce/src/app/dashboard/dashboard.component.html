@@ -1,5 +1,6 @@
 <h2>Dashboard</h2>
 
+<!-- NopCommerce News -->
 <div class='container mw-100'>
     <mat-card>
         <h3>NopCommerce News</h3>
@@ -59,6 +60,7 @@
 
 <br/>
 
+<!-- Common statistics -->
 <div class='container mw-100'>
     <mat-card>
         <h3>Common statistics</h3>
@@ -101,12 +103,15 @@
 
 <br/>
 
+<!-- Order totals & Incomplete orders -->
 <div class='container mw-100'>
     <div class="row">
     
         <div class="col-8">
             <mat-card>
                 <h3>Order totals</h3>
+                <app-order-totals></app-order-totals>
+
             </mat-card>
         </div>
         <br/>
@@ -114,6 +119,7 @@
         <div class="col-4">
             <mat-card>
                 <h3>Incomplete orders</h3>
+                <app-incomplete-orders></app-incomplete-orders>
             </mat-card>
         </div>
         <br/>
@@ -123,19 +129,21 @@
 
 <br/>
 
-
+<!-- Lastest Orders & Popular search keywords -->
 <div class='container mw-100'>
     <div class="row">
     
         <div class="col-8">
             <mat-card>
                 <h3>Lastest Orders</h3>
+                <app-lastest-orders></app-lastest-orders>
             </mat-card>
         </div>
     
         <div class="col-4">
             <mat-card>
                 <h3>Popular search keywords</h3>
+                <app-popular-search-keywords></app-popular-search-keywords>
             </mat-card>
         </div>
 
@@ -144,7 +152,7 @@
 
 <br/>
 
-
+<!-- Bestsellers by quantity & Bestsellers by amount -->
 <div class='container mw-100'>
     <div class="row">
     

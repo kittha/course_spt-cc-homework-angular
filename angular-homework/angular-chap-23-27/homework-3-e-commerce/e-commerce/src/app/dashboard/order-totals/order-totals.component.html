@@ -1,0 +1,47 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- orderstatus Column -->
+    <ng-container matColumnDef="orderstatus">
+      <th mat-header-cell *matHeaderCellDef> Order Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.orderstatus}} </td>
+    </ng-container>
+  
+    <!-- today Column -->
+    <ng-container matColumnDef="today">
+      <th mat-header-cell *matHeaderCellDef> Today </th>
+      <td mat-cell *matCellDef="let element"> {{element.today | currency}} </td>
+    </ng-container>
+  
+    <!-- thisweek Column -->
+    <ng-container matColumnDef="thisweek">
+      <th mat-header-cell *matHeaderCellDef> This Week </th>
+      <td mat-cell *matCellDef="let element"> {{element.thisweek | currency}} </td>
+    </ng-container>
+  
+    <!-- thismonth Column -->
+    <ng-container matColumnDef="thismonth">
+      <th mat-header-cell *matHeaderCellDef> This Month </th>
+      <td mat-cell *matCellDef="let element"> {{element.thismonth | currency}} </td>
+    </ng-container>
+    
+    <!-- thisyear Column -->
+    <ng-container matColumnDef="thisyear">
+      <th mat-header-cell *matHeaderCellDef> This Year </th>
+      <td mat-cell *matCellDef="let element"> {{element.thisyear | currency}} </td>
+    </ng-container>
+    
+    <!-- alltime Column -->
+    <ng-container matColumnDef="alltime">
+      <th mat-header-cell *matHeaderCellDef> All time </th>
+      <td mat-cell *matCellDef="let element"> {{element.alltime | currency}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

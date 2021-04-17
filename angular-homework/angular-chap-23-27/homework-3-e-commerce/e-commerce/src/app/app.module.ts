@@ -12,12 +12,16 @@ import { MatCardModule} from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatListModule } from '@angular/material/list';
-
+import { MatTableModule } from '@angular/material/table';
 
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
+import { OrderTotalsComponent } from './dashboard/order-totals/order-totals.component';
+import { IncompleteOrdersComponent } from './dashboard/incomplete-orders/incomplete-orders.component';
+import { LastestOrdersComponent } from './dashboard/lastest-orders/lastest-orders.component';
+import { PopularSearchKeywordsComponent } from './dashboard/popular-search-keywords/popular-search-keywords.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { ProductsComponent } from './products/products.component';
     ToolbarComponent,
     DashboardComponent,
     PageNotFoundComponent,
-    ProductsComponent
+    ProductsComponent,
+    OrderTotalsComponent,
+    IncompleteOrdersComponent,
+    LastestOrdersComponent,
+    PopularSearchKeywordsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +47,7 @@ import { ProductsComponent } from './products/products.component';
     MatIconModule,
     MatButtonModule,
     MatListModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
