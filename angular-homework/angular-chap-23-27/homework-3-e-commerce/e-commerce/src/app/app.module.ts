@@ -23,6 +23,8 @@ import { OrderTotalsComponent } from './dashboard/order-totals/order-totals.comp
 import { IncompleteOrdersComponent } from './dashboard/incomplete-orders/incomplete-orders.component';
 import { LastestOrdersComponent } from './dashboard/lastest-orders/lastest-orders.component';
 import { PopularSearchKeywordsComponent } from './dashboard/popular-search-keywords/popular-search-keywords.component';
+import { BestsellersByQuantityComponent } from './dashboard/bestsellers-by-quantity/bestsellers-by-quantity.component';
+import { BestsellersByAmountComponent } from './dashboard/bestsellers-by-amount/bestsellers-by-amount.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PopularSearchKeywordsComponent } from './dashboard/popular-search-keywo
     OrderTotalsComponent,
     IncompleteOrdersComponent,
     LastestOrdersComponent,
-    PopularSearchKeywordsComponent
+    PopularSearchKeywordsComponent,
+    BestsellersByQuantityComponent,
+    BestsellersByAmountComponent
   ],
   imports: [
     BrowserModule,
