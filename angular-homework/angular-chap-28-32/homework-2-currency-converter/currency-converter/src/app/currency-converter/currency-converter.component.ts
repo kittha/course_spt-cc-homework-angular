@@ -50,12 +50,12 @@ export class CurrencyConverterComponent implements OnInit {
 
   convert(): void {
     console.log(`pong`);
-    // GET USER INPUT: BASE AMOUNT & BASE CURRENCY & TARGET CURRENCY
     console.log( JSON.stringify(this.form.value) );
-    // SELECT USER INPUT: BASE CURRENCY: THEN FETCH EUR-BASERATE (eg. EUR-USD rate, EUR-THB rate, etc.)
+    // GET USER INPUT: BASE AMOUNT & BASE CURRENCY & TARGET CURRENCY
+    // SELECT USER INPUT: BASE CURRENCY: CHOOSE RELATED EUR-BASERATE (eg. EUR-USD rate, EUR-THB rate, etc.)
     let baseMatch: string = this.form.value.baseCurrency;
     this.basePairFxRate = Object.entries(this.cache)[4][1][baseMatch];
-    // SELECT USER INPUT: TARGET CURRENCY: THEN FETCH EUR-TARGETRATE (eg. EUR-USD rate, EUR-THB rate, etc.)
+    // SELECT USER INPUT: TARGET CURRENCY: CHOOSE RELATED EUR-TARGETRATE (eg. EUR-USD rate, EUR-THB rate, etc.)
     let targetMatch: string = this.form.value.targetCurrency;
     this.targetPairFxRate = Object.entries(this.cache)[4][1][targetMatch];
     // PRINT TO CONSOLE: CROSS CHECK EUR-BASERATE & EUR-TARGETRATE
