@@ -12,11 +12,15 @@
 	outline: auto;
 } */
 
+
 article {
 	background: white;
 }
 
 
+header>h1 {
+	text-align: center
+}
 
 .profile {
 	background: rgba(211, 211, 211, 0.5);
@@ -64,34 +68,42 @@ article {
 	padding-bottom: 2%;
 }
 
-
+.whole{
+	clear: both;
+}
 
 div.certs__fulltext>a, div.skills__fulltext>a {
 	color: blue;
 	font-weight: bold;
 }
 
-
-
-.skills__less, #skills__more-1 {
+.certs__less, #certs__more-1 {
 	margin-top: 3vh;
 }
 
-.skills__fulltext section, .skills__less {
+.certs__fulltext section, .certs__less {
 	display: none;
 }
 
-.skills__fulltext:target section, .skills__fulltext:target .skills__less {
+.certs__fulltext:target section, .certs__fulltext:target .certs__less {
 	display: block;
 }
 
-.skills__fulltext:target .skills__more {
+.certs__fulltext:target .certs__more {
 	display: none;
 }
+
+
 
 
 
 /* || HEADER AND MAIN NAVIGATION */
+
+
+
+
+
+/* || FOOTER */
 
 /* ---------------------------------------------------------------- */
 
@@ -104,21 +116,12 @@ div.certs__fulltext>a, div.skills__fulltext>a {
 /* RESPONSIVE WEB DESIGN:TABLET-LANDSCAPE */
 @media only screen and (min-width: 780px) {
 	/* || GENERAL STYLES */
-	h1 {
-		margin-top: 5vh;
-	}
 
-	/* header>h1 {
-		margin-top: 6vh;
-	} */
 
 	html {
 		scroll-behavior: smooth
 	}
 
-	#overview {
-		margin-top: 2vh;
-	}
 
 
 

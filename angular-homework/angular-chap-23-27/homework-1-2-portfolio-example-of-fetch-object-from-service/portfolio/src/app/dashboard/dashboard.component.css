@@ -18,11 +18,16 @@ article {
 
 
 
+
+
+header>h1 {
+	text-align: center
+}
+
 .profile {
 	background: rgba(211, 211, 211, 0.5);
 	padding: 1%;
 	border-radius: 15px;
-	margin-top: 2vh;
 }
 
 .profile a:link {
@@ -64,34 +69,22 @@ article {
 	padding-bottom: 2%;
 }
 
-
-
-div.certs__fulltext>a, div.skills__fulltext>a {
-	color: blue;
-	font-weight: bold;
+.whole{
+	clear: both;
 }
 
 
-
-.skills__less, #skills__more-1 {
-	margin-top: 3vh;
-}
-
-.skills__fulltext section, .skills__less {
-	display: none;
-}
-
-.skills__fulltext:target section, .skills__fulltext:target .skills__less {
-	display: block;
-}
-
-.skills__fulltext:target .skills__more {
-	display: none;
-}
 
 
 
 /* || HEADER AND MAIN NAVIGATION */
+
+
+
+
+
+
+/* || FOOTER */
 
 /* ---------------------------------------------------------------- */
 
@@ -105,19 +98,19 @@ div.certs__fulltext>a, div.skills__fulltext>a {
 @media only screen and (min-width: 780px) {
 	/* || GENERAL STYLES */
 	h1 {
-		margin-top: 5vh;
+		/* margin-top: 5vh; */
 	}
 
-	/* header>h1 {
-		margin-top: 6vh;
-	} */
+	header>h1 {
+		/* margin-top: 6vh; */
+	}
 
 	html {
 		scroll-behavior: smooth
 	}
 
 	#overview {
-		margin-top: 2vh;
+		/* margin-top: 2vh; */
 	}
 
 

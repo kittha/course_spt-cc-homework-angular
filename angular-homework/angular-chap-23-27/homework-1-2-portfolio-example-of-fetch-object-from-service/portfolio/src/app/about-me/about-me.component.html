@@ -1,11 +1,32 @@
-<!-- <p>about-me works!</p> -->
-<h2>{{profiles.name}}</h2>
+<article class="profile" id="profile">
+    <img src="../../assets/imgs/avatar.jpg" alt="Avatar" class="avatar"> 
+    <h2 class="closed">Overview</h2>
+    <article class="profile__background rounded-corner-em">
 
-<h3>Skills</h3>
-<div>
-    <ul>
-        <li *ngFor="let skill of skills">
-            {{skill}}
-        </li>
-    </ul>
-</div>
+      <article class="profile__background__skills" id="skills__less-1">
+    <!-- <mat-accordion> -->
+      <mat-expansion-panel hideToggle expanded>
+                                      
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>{{ profiles.name }}</h3>
+          </mat-panel-title>
+          <mat-panel-description>
+            <!-- This is a summary of the content -->
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>-</p>
+        <p>Chulalongkorn University</p>
+        <p>Nonthaburi, Thailand</p>
+        
+              
+        
+    </mat-expansion-panel>
+    <!-- </mat-accordion> -->
+    
+      </article>
+    </article>
+</article>
+
+
+              

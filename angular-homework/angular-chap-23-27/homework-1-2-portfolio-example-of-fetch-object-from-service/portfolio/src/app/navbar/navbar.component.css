@@ -1,24 +1,27 @@
 /* || HEADER AND MAIN NAVIGATION */
-.navbar {
-    display: block;
-    /* position: fixed; */
-    top:0 ;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    background: rgb(18, 113, 202);
-    padding: 10px;
+
+
+
+
+/* TOOLBAR */
+/* TOOLBAR : set user button, logout button to the right of the screen. */
+.example-spacer {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
-.navbar a {
-    padding: 10px;
-    text-decoration: none;
+/* TOOLBAR : set user button, logout button color to grey */
+mat-toolbar-row > a.profile {
+    /* color: grey; */
+    color: white;
 }
 
-.navbar a:hover {
-    background: navy;
+mat-toolbar-row > a.logout {
+    /* color: lightgray; */
+    color: white;
 }
 
-.navbar a:link, .navbar a:visited {
-    color:white;
+mat-sidenav-content {
+    height: 91vh;
 }

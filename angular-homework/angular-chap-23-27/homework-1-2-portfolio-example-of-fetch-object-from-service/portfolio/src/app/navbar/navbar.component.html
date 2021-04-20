@@ -1,5 +1,39 @@
-<nav class="navbar">
-    <a routerLink="/aboutme">Dashboard</a>
-    <a routerLink="/skills">Skills</a>
-    <a routerLink="/contact">Contact Me</a>
-</nav>
+<div>
+    <mat-toolbar color="primary">
+
+        <mat-toolbar-row>
+            <button mat-icon-button class="example-icon" aria-label="icon-button with menu icon">
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+            <span class="example-spacer"></span>
+            <a mat-list-item class="p-3 profile" [routerLink]="'/aboutme'"> KT </a>
+        </mat-toolbar-row>
+        
+    </mat-toolbar>
+</div>
+
+
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="'/dashboard'">Dashboard</a>
+            <a mat-list-item [routerLink]="'/aboutme'">About Me</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/experience'">Experience</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/education'">Education</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/certifications'">Licenses & Certifications</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/volunteer'">Online Volunteer</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/skills'">Skills</a>
+            <a mat-list-item class="sidenav-list" [routerLink]="'/contact'">Contact Me</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+        
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+        
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

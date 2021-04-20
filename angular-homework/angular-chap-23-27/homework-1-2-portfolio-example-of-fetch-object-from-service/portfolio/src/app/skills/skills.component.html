@@ -1,1 +1,110 @@
-<p>skills works!</p>
+  <article class="profile" id="profile">
+              
+    <article class="profile__background rounded-corner-em">
+  
+      <article class="profile__background__skills" id="skills__less-1">
+        
+        <!-- <mat-accordion> -->
+          <mat-expansion-panel hideToggle expanded>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h3>Skills</h3>
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- This is a summary of the content -->
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <section class="profile__background__skills__skill">
+              <h4>QuickBooks</h4>
+              <p><a href="../../assets/imgs/skills/assessment-quickbooks.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Search Engine Optimization (SEO)</h4>
+              <p><a href="../../assets/imgs/skills/assessment-seo.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Microsoft Word</h4>
+              <p><a href="../../assets/imgs/skills/assessment-microsoft-word.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <!-- <hr class="hr-light"> -->
+            </section>
+            
+            
+
+          </mat-expansion-panel>
+
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                See all skills
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <!-- <p>I'm visible because I am open</p> -->
+            <section class="profile__background__skills__skill">
+              <h4>Microsoft Excel</h4>
+              <p><a href="../../assets/imgs/skills/assessment-microsoft-excel.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Microsoft PowerPoint</h4>
+              <p><a href="../../assets/imgs/skills/assessment-microsoft-powerpoint.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Adobe Acrobat</h4>
+              <p><a href="../../assets/imgs/skills/assessment-adobe-acrobat.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Google Analytics</h4>
+              <p><a href="../../assets/imgs/skills/assessment-google-analytics.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Git</h4>
+              <p><a href="../../assets/imgs/skills/assessment-git.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>HTML</h4>
+              <p><a href="../../assets/imgs/skills/assessment-html.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Cascading Style Sheets (CSS)</h4>
+              <p><a href="../../assets/imgs/skills/assessment-cascading-style-sheets.jpg" target="_blank">LinkedIn Skill Assessment badge</a></p>
+              <hr class="hr-light">
+            </section>
+            
+            <section class="profile__background__skills__skill">
+              <h4>Touch Typing</h4>
+              <p>Speed: 86 WPM</p>
+              <a href="../../assets/imgs/skills/assessment-typing-test.png" target="_blank">See credential</a>
+              <hr class="hr-light">
+            </section>
+            
+          </mat-expansion-panel>
+        <!-- </mat-accordion> -->
+        
+
+          
+        
+      </article>
+      <hr>
+      
+    </article>
+
+  </article>

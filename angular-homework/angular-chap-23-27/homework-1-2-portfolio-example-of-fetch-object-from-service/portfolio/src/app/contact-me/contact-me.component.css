@@ -1,0 +1,149 @@
+/* MOBILE FIRST DESIGN*/
+/* TOC */
+/* -RESPONSIVE WEB DESIGN:MOBILE, TABLET-PORTRAIT */
+/* -RESPONSIVE WEB DESIGN:TABLET-LANDSCAPE */
+/* -RESPONSIVE WEB DESIGN:DESKTOP */
+/* ---------------------------------------------------------------- */
+
+/*RESPONSIVE WEB DESIGN:MOBILE, TABLET-PORTRAIT */
+
+/* || GENERAL STYLES */
+/* * {
+	outline: auto;
+} */
+
+mat-expansion-panel-header {
+	pointer-events: none;
+}
+
+article {
+	background: white;
+}
+
+
+
+
+
+
+
+.profile {
+	background: rgba(211, 211, 211, 0.5);
+	padding: 1%;
+	border-radius: 15px;
+	margin-top: 2vh;
+}
+
+.profile a:link {
+	text-decoration: none;
+}
+
+
+
+
+
+/* || UTILITIES */
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.closed {
+	display: none;
+}
+
+.hr-light{
+	color: rgba(211, 211, 211, 0.3);
+}
+
+.opened {
+	display: block;
+}
+
+.rounded-corner-em {
+	border: 1px solid grey;
+	border-radius: 15px;
+	width: 92%;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	padding: 2%;
+	padding-bottom: 2%;
+}
+
+.whole{
+	clear: both;
+}
+
+
+
+
+
+/* || HEADER AND MAIN NAVIGATION */
+
+
+
+
+
+
+/* || FOOTER */
+#footer-copyrightico {
+	border: 0;
+	width: 88px;
+	height: 31px;
+}
+
+.freepik-license{
+	text-align: center;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* RESPONSIVE WEB DESIGN:TABLET-LANDSCAPE */
+@media only screen and (min-width: 780px) {
+	/* || GENERAL STYLES */
+
+	html {
+		scroll-behavior: smooth
+	}
+
+
+
+
+
+
+	/* || UTILITIES */
+
+
+
+
+
+	/* || HEADER AND MAIN NAVIGATION */
+
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+/* RESPONSIVE WEB DESIGN:DESKTOP */
+@media only screen and (min-width: 1024px) {
+	/* || GENERAL STYLES */
+	header>h1 {
+		margin-left: 4%;
+		text-align: left;
+	}
+
+	/* || UTILITIES */
+
+	/* || HEADER AND MAIN NAVIGATION */
+
+}
+/* ---------------------------------------------------------------- */
