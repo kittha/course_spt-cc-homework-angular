@@ -1,1 +1,1 @@
-# SPT-CC-HOMEWORK-ANGULAR
+# course-spt-cc-homework-angular
